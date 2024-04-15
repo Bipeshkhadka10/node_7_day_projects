@@ -1,0 +1,13 @@
+step 1: npm inti / npm init -y
+step 2: create new file of app.js convenstion
+step 3:install npm pakage by npm i pakage_name (say: express,messenger etc.)
+express : 4.19.2   //sementic version always in sementic(major.minor.patch)  ->semantic version
+step 4: require the express pacakge // varable_name = require('pacakge');
+step 5:invoke the require data
+step 6:
+step 7:
+step 8:
+step 9:
+
+pacakge.json file consist of detail of project
+
