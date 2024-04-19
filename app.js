@@ -2,7 +2,6 @@
 const express = require('express');
 const app = express()
 
-
 app.get('/',(req,res)=>{
     res.render('home.ejs')        // we can also qrite html inside of res.send as
 })
@@ -18,7 +17,7 @@ app.get('/blog/create',(req,res)=>{
     res.render('create.ejs')
 })
 app.get('/blog/edit',(req,res)=>{
-    res.render('edit.ejs')
+    res.render('editblog.ejs')
 })
 
 app.listen(3000,()=>{
