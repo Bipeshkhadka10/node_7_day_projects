@@ -2,15 +2,14 @@
 const express = require('express');
 const app = express()
 
+
+require("./model/index")
+app.set('view engine','ejs')
+
 app.get('/',(req,res)=>{
     res.render('home.ejs')        // we can also qrite html inside of res.send as
 })
 app.get('/blog',(req,res)=>{
-    const data={
-        name:'bipesh',
-        age:20,
-        gender:'male'
-    }
     res.render('blog.ejs',{data})
 })
 app.get('/blog/create',(req,res)=>{
