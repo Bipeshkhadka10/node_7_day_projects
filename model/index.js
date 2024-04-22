@@ -26,10 +26,12 @@ sequelize
   });
 
 const db = {};
+db.todos = require ('./todo')(sequelize,DataTypes)
 db.blogs = require('./blogModel')(sequelize,DataTypes)
 db.user = require('./userModel')(sequelize,DataTypes)
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
+db.Sequelize = sequelize;
 
 // importing model files 
 //db.blogs = require("./blogModel.js")(sequelize, DataTypes);
